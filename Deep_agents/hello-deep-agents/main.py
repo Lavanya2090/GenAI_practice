@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 from deepagents import create_deep_agent
 from langchain_google_genai import ChatGoogleGenerativeAI
+from agents.interview_agent import generate_interview_document  # import only what you need
 
 load_dotenv()
 
@@ -35,5 +36,14 @@ def main():
     print(result)
 
 
+
+
+
+def interview_questions():
+
+    result = generate_interview_document()
+
+    print(result)
+
 if __name__ == "__main__":
-    main()
+    interview_questions()
