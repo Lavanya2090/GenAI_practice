@@ -10,4 +10,5 @@ dependencies = [
     "langgraph>=1.2.4",
     "pdoc>=16.0.0",
     "python-dotenv>=1.2.2",
+    "yfinance>=1.4.1",
 ]
